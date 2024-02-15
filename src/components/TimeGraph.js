@@ -9,15 +9,15 @@ class TimeGraph extends React.Component {
       series: [
         {
           name: "Pierre",
-          data: [0.5, 1, 0, 5, 8, 10, 2, 0.5, 5, 4, 3, 1],
+          data: [3, 4, 5, 3, 7, 6, 5, 4, 6, 8, 7, 6],
         },
         {
           name: "Déborah",
-          data: [7, 7, 7, 7, 7, 8, , 7, 7, 7, 7, 5],
+          data: [6, 5, 7, 5, 8, 9, 8, 7, 8, 6, 5, 7],
         },
         {
           name: "Paul",
-          data: [87, 57, 74, 99, 75, 38, 62, 47, 82, 56, 45, 47],
+          data: [4, 5, 6, 4, 7, 6, 5, 6, 8, 7, 6, 5],
         },
       ],
       options: {
@@ -34,7 +34,7 @@ class TimeGraph extends React.Component {
         stroke: {
           width: [5, 7, 5],
           curve: "straight",
-          dashArray: [0, 8, 5],
+          dashArray: [0, 0, 5],
         },
         title: {
           text: "Page Statistics",
@@ -53,7 +53,7 @@ class TimeGraph extends React.Component {
         markers: {
           size: 0,
           hover: {
-            sizeOffset: 6,
+            sizeOffset: 10,
           },
         },
         xaxis: {
@@ -77,21 +77,21 @@ class TimeGraph extends React.Component {
             {
               title: {
                 formatter: function (val) {
-                  return val + " (mins)";
+                  return val + " (heures)";
                 },
               },
             },
             {
               title: {
                 formatter: function (val) {
-                  return val + " par session";
+                  return val + " (heures)";
                 },
               },
             },
             {
               title: {
                 formatter: function (val) {
-                  return val;
+                  return val + " (heures)";
                 },
               },
             },
@@ -111,8 +111,8 @@ class TimeGraph extends React.Component {
           options={this.state.options}
           series={this.state.series}
           type="line"
-          height={1000}
-          width={1900}
+          height={1100}
+          width={2000}
         />
       </div>
     );
