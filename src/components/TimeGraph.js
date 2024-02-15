@@ -10,6 +10,7 @@ class TimeGraph extends React.Component {
         {
           name: "Pierre",
           data: [3, 4, 5, 3, 7, 6, 5, 4, 6, 8, 7, 6],
+          description: "Tace de Pierre",
         },
         {
           name: "Déborah",
