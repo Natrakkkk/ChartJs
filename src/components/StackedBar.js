@@ -27,8 +27,7 @@ class StackedBar extends React.Component {
       options: {
         chart: {
           type: "bar",
-          height: 500,
-          width: 2000,
+          height: 700,
           stacked: true,
           stackType: "100%",
         },
@@ -42,23 +41,26 @@ class StackedBar extends React.Component {
           colors: ["#fff"],
         },
         title: {
-          text: "100% Stacked Bar",
+          text: "Graph renta/projets",
         },
         xaxis: {
-          categories: [
-            "Capency",
-            "Accor",
-            "MBA",
-            "First Finance",
-            2012,
-            2013,
-            2014,
-          ],
+          categories: ["Capency", "Accor", "MBA", "First Finance", "", 2013, 2014],
+          labels: {
+            rotate: -45,
+            style: {
+              fontSize: '12px',
+            },
+            trim: true,
+            maxWidth: 100,
+            offsetX: 0,
+            offsetY: 0,
+            padding: 5,
+          }
         },
         tooltip: {
           y: {
             formatter: function (val) {
-              return val + "K";
+              return val + "K €";
             },
           },
         },
@@ -81,8 +83,8 @@ class StackedBar extends React.Component {
           options={this.state.options}
           series={this.state.series}
           type="bar"
-          height={1200}
-          width={2000}
+          height={700}
+          width={1200}
         />
       </div>
     );

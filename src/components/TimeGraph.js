@@ -32,11 +32,6 @@ class TimeGraph extends React.Component {
         dataLabels: {
           enabled: false,
         },
-        stroke: {
-          width: [5, 7, 5],
-          curve: "straight",
-          dashArray: [0, 0, 5],
-        },
         title: {
           text: "Page Statistics",
           align: "left",
@@ -112,8 +107,8 @@ class TimeGraph extends React.Component {
           options={this.state.options}
           series={this.state.series}
           type="line"
-          height={1100}
-          width={2000}
+          height={700}
+          width={1200}
         />
       </div>
     );
