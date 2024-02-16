@@ -4,13 +4,11 @@ import StackedBar from "../components/StackedBar";
 
 function Dashboard() {
   return (
-    <div className="">
-      <div className="flex bg-fff pt-10 flex-col items-center">
-        <h1 className="text-black text-5xl uppercase">Graph TACE / MOIS</h1>
+    <div className="flex">
+      <div className="bg-fff pt-10 mx-4 items-center w-full">
         <TimeGrahp />
       </div>
-      <div className="flex bg-fff pt-10 flex-col items-center">
-        <h1 className="text-black text-5xl uppercase">Graph Renta / Projets</h1>
+      <div className="bg-fff pt-10 mx-4 items-center w-full">
         <StackedBar />
       </div>
     </div>

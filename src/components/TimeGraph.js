@@ -9,7 +9,7 @@ class TimeGraph extends React.Component {
       series: [
         {
           name: "Pierre",
-          data: [3, 4, 5, 3, 7, 6, 5, 4, 6, 8, 7, 6],
+          data: [3, 4, 5, 3, 0, 7, 6, 5, 4, 6, 8, 7, 6],
           description: "Tace de Pierre",
         },
         {
@@ -108,7 +108,7 @@ class TimeGraph extends React.Component {
           series={this.state.series}
           type="line"
           height={700}
-          width={1200}
+          width="100%"
         />
       </div>
     );

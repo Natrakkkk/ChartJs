@@ -84,7 +84,7 @@ class StackedBar extends React.Component {
           series={this.state.series}
           type="bar"
           height={700}
-          width={1200}
+          width="100%"
         />
       </div>
     );
